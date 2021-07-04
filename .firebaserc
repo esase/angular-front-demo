@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-demo-85242": {
+      "hosting": {
+        "front": [
+          "angular-demo-front-85242"
+        ]
+      }
+    }
+  }
+}

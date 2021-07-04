@@ -1,0 +1,10 @@
+<div *ngIf="itemList$ | async as itemList; else loading">
+    <app-item-list 
+        [items]="itemList">
+    </app-item-list>
+</div>
+
+<ng-template #loading>
+    <app-loading></app-loading>
+</ng-template>  
+

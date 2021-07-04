@@ -1,0 +1,39 @@
+<nb-card>
+    <nb-card-header>Item list</nb-card-header>
+    <nb-card-body>
+        <table class="item-list-table">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>CartId</td>
+                    <td>Name</td>
+                    <td>Description</td>
+                    <td>Price</td>
+                    <td>SKU</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of items">
+                    <td>
+                        {{ item.id }}
+                    </td>
+                    <td>
+                        {{ item.cartId }}
+                    </td>
+                    <td>
+                        {{ item.name }}
+                    </td>
+                    <td>
+                        {{ item.description }}
+                    </td>
+                    <td>
+                        {{ item.price }}
+                    </td>
+                    <td>
+                        {{ item.sku }}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </nb-card-body>
+</nb-card>
